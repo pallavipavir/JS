@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS-BASICS</title>
+        </head>
+        <body>
+            <center>
+                <h1>VARIABLE SCOPES</h1>
+                <p>1) GLOBAL SCOPE  -> defines outside the block</p>
+                <p>2) LOCAL SCOPES  -> defines inside the block</p>
+            </center>
+            <hr>
+
+            <script>
+                //SCPOPE
+
+                var a = 12;
+                const b = 33;
+                let c = 44;
+                var d = 50;
+
+                document.write(`<p>a = ${a}</p>`);
+                document.write(`<p>b = ${b}</p>`);
+                document.write(`<p>c = ${c}</p>`);
+                document.write(`<p>d = ${d}</p>`);
+
+                if(d > 20){
+                    //block
+
+                    var x = 100; //Global
+                    let y = 200; //Local
+                    const z = 300; //Local
+
+                    document.write(`<p>x = ${x}</p>`);
+                    document.write(`<p>y = ${y}</p>`);
+                    document.write(`<p>z = ${z}</p>`);
+
+                }
+
+                document.write(`<p>x = ${x}</p>`);
+                document.write(`<p>y = ${y}</p>`);
+                document.write(`<p>z = ${z}</p>`);
+
+
+            </script>
+        </body>
+    </html>
