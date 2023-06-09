@@ -1,20 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>JS-BASICS</title>
-        </head>
-        <body>
-            <center>
-                <h1>VARIABLE SCOPES</h1>
-                <p>1) GLOBAL SCOPE  -> defines outside the block</p>
-                <p>2) LOCAL SCOPES  -> defines inside the block</p>
-            </center>
-            <hr>
 
-            <script>
                 //SCPOPE
 
                 var a = 12;
@@ -70,8 +54,11 @@
                 var user = {
                 //key : value, => property
                 name: "ramesh",
-                email: "ramesh@gmail.com"
+                email: "ramesh@gmail.com",
                 };
+                document.write(`<p>user = ${typeof(user)}</p>`);
+                document.write(`<p>user = ${user}</p>`);
+
                 document.write(`<p>user = ${typeof(user)}</p>`);
                 document.write(`<p>user = ${user}</p>`);
 
@@ -89,13 +76,3 @@
                     document.write(`<p>Second parameter is : ${name}</p>`);
                 }
                 paramterFun('JavaScript', "admin@javascript.com");
-            </script>
-
-            <hr>
-
-            <!--External Script-->
-            <script src="assets/js/script.js"></script>
-
-            
-        </body>
-    </html>
